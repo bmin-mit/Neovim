@@ -2,6 +2,12 @@
 
 return {
 	"mason-org/mason-lspconfig.nvim",
+	opts = {
+		ensure_installed = {
+			"lua_ls",
+			"rust_analyzer",
+		},
+	},
 	dependencies = {
 		{
 			"mason-org/mason.nvim",
@@ -19,9 +25,6 @@ return {
 				"pyright",
 				"python-lsp-server",
 
-				-- Lua
-				"lua_ls",
-
 				-- JSON
 				"json-lsp",
 
@@ -30,9 +33,6 @@ return {
 
 				-- C#
 				"csharp-language-server",
-
-				-- Rust
-				"rust-analyzer",
 
 				-- env
 				"dotenv-linter",
