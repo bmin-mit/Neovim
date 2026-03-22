@@ -8,6 +8,15 @@ return {
 			"rust_analyzer",
 		},
 	},
+	init = function()
+		vim.diagnostic.config({
+			virtual_text = true, -- inline text (like errors at end of line)
+			signs = true, -- gutter icons
+			underline = true, -- underline errors
+			update_in_insert = false,
+			severity_sort = true,
+		})
+	end,
 	dependencies = {
 		{
 			"mason-org/mason.nvim",
