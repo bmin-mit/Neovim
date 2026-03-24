@@ -23,6 +23,7 @@ require("config.autocmds")
 -- Setup lazy.nvim and plugins
 require("lazy").setup({
 	spec = {
+		{ import = "plugins.coding" },
 		{ import = "plugins.completions" },
 		{ import = "plugins.lsp" },
 		{ import = "plugins.ui" },
