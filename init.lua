@@ -26,12 +26,12 @@ require("lazy").setup({
 		{ import = "plugins.coding" },
 		{ import = "plugins.completions" },
 		{ import = "plugins.editor" },
-		{ import = "plugins.lsp" },
-		{ import = "plugins.ui" },
 		{ import = "plugins.formatting" },
+		{ import = "plugins.lsp" },
 		{ import = "plugins.themes" },
-		{ import = "plugins.utils" },
 		{ import = "plugins.treesitter" },
+		{ import = "plugins.ui" },
+		{ import = "plugins.utils" },
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
