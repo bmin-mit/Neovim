@@ -4,7 +4,7 @@ return {
 	"zaldih/themery.nvim",
 	lazy = false,
 	keys = {
-		{ "<C-k><C-T>", "<cmd>Themery<cr>", desc = "Change [T]heme" },
+		{ "<leader>t", "<cmd>Themery<cr>", desc = "Change [T]heme" },
 	},
 	config = function()
 		require("themery").setup({
