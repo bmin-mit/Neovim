@@ -47,6 +47,6 @@ return {
 				"dotenv-linter",
 			},
 		},
-		"neovim/nvim-lspconfig",
+		{ "neovim/nvim-lspconfig" },
 	},
 }
