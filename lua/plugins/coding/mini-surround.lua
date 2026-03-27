@@ -1,3 +1,16 @@
 -- Neovim Lua plugin with fast and feature-rich surround actions. Part of 'mini.nvim' library.
 
-return { "nvim-mini/mini.surround", version = "*" }
+return {
+	"nvim-mini/mini.surround",
+	version = "*",
+	opts = {
+		mappings = {
+			add = "<leader>sa", -- Add surrounding in Normal and Visual modes
+			delete = "<leader>sd", -- Delete surrounding
+			find = "<leader>sf", -- Find surrounding (to the right)
+			find_left = "<leader>sF", -- Find surrounding (to the left)
+			highlight = "<leader>sh", -- Highlight surrounding
+			replace = "<leader>sr", -- Replace surrounding
+		},
+	},
+}
